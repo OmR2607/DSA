@@ -259,12 +259,12 @@ This is because of the way Python handles memory management and optimizes memory
 # -------------------------------------------------------------------------------------------------------------------------------------
 
 # WAP to calculate notes of 500, 100, 50, 20, 10, 5, 2 and 1 from a given amount
-amount = int(input("Enter the amount: "))
-print("500 notes: ", amount//500)
-print("100 notes: ",(amount%500)//100) 
-print("50 notes: ",((amount%500)%100)//50)
-print("20 notes: ",(((amount%500)%100)%50)//20)
-print("10 notes: ",((((amount%500)%100)%50)%20)//10)
-print("5 notes: ", (((((amount%500)%100)%50)%20)%10)//5)
-print("2 notes: ", ((((((amount%500)%100)%50)%20)%10)%5)//2)
-print("1 notes: ", (((((((amount%500)%100)%50)%20)%10)%5)%2)//1)
+# amount = int(input("Enter the amount: "))
+# print("500 notes: ", amount//500)
+# print("100 notes: ",(amount%500)//100) 
+# print("50 notes: ",((amount%500)%100)//50)
+# print("20 notes: ",(((amount%500)%100)%50)//20)
+# print("10 notes: ",((((amount%500)%100)%50)%20)//10)
+# print("5 notes: ", (((((amount%500)%100)%50)%20)%10)//5)
+# print("2 notes: ", ((((((amount%500)%100)%50)%20)%10)%5)//2)
+# print("1 notes: ", (((((((amount%500)%100)%50)%20)%10)%5)%2)//1)
