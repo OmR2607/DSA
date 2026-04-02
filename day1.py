@@ -1,4 +1,3 @@
-
 '''
 python is an interpreted programming language
 PVM - Python virtual machine --> 
@@ -236,9 +235,23 @@ This is because of the way Python handles memory management and optimizes memory
 # -------------------------------------------------------------------------------------------------------------------------------------
 
 # WAP to accept a day and check whether it is a working day or weekend
-day = input("Enter a day:")
-day = day.lower()
-if day == "saturday" or day == "sunday":
-    print("Weekend")
+# day = input("Enter a day:")
+# day = day.lower()
+# if day == "saturday" or day == "sunday":
+#     print("Weekend")
+# else:
+#     print("Working day")
+
+# -------------------------------------------------------------------------------------------------------------------------------------
+
+# WAP to check type of input from user and check whether it is uppercase, lowercase, digit or special character using ord function
+a = input("Enter a single character: ")
+a = ord(a)
+if a >= 65 and a <= 90:
+    print("Uppercase")
+elif a >= 97 and a <= 122:
+    print("Lowercase")
+elif a >= 48 and a <= 57:
+    print("Digit")
 else:
-    print("Working day")
+    print("Special character")
