@@ -219,16 +219,28 @@ This is because of the way Python handles memory management and optimizes memory
 # -------------------------------------------------------------------------------------------------------------------------------------
 
 # WAP to accept value of A,B,C and find max value among them using nested if else
-A = int(input("Enter value of A: "))
-B = int(input("Enter value of B: "))
-C = int(input("Enter value of C: "))
-if A>B:
-    if A>C:
-        print("A is greater")
-    else:
-        print("C is greater")
+# A = int(input("Enter value of A: "))
+# B = int(input("Enter value of B: "))
+# C = int(input("Enter value of C: "))
+# if A>B:
+#     if A>C:
+#         print("A is greater")
+#     else:
+#         print("C is greater")
+# else:
+#     if B>C:
+#         print("B is greater")
+#     else:
+#         print("C is greater")
+
+# -------------------------------------------------------------------------------------------------------------------------------------
+
+# WAP to accept a day and check whether it is a weekday or weekend
+day = input("Enter a day:")
+day = day.lower()
+if day == "saturday" or day == "sunday":
+    print("Weekend")
+elif day == "monday" or day == "tuesday" or day == "wednesday" or day == "thursday" or day == "friday":
+    print("Weekday")
 else:
-    if B>C:
-        print("B is greater")
-    else:
-        print("C is greater")
+    print("Invalid day")
