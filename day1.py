@@ -117,19 +117,19 @@ This is because of the way Python handles memory management and optimizes memory
 
 # WAP to accept phy,chem and math subject marks and calculate total and percentage and if percentage is greater or equal to 60 
 # and gender is equal to male so he is eligible for placement else eligible for data entry job.
-phy = int(input("Enter value of physics: "))
-chem = int(input("Enter value of chemistry: "))
-math = int(input("Enter value of mathematics: "))
-total = phy + chem + math
-percentage = (total/3.0)
-print("Total marks: ", total)
-print("Percentage: ", percentage,"%")
-gender = input("Enter your gender(M/F): ")
-gender = gender.upper()
-if (percentage >= 60) and (gender == "M"):
-    print("Eligible for placement")
-else:
-    print("Eligible for data entry job")
+# phy = int(input("Enter value of physics: "))
+# chem = int(input("Enter value of chemistry: "))
+# math = int(input("Enter value of mathematics: "))
+# total = phy + chem + math
+# percentage = (total/3.0)
+# print("Total marks: ", total)
+# print("Percentage: ", percentage,"%")
+# gender = input("Enter your gender(M/F): ")
+# gender = gender.upper()
+# if (percentage >= 60) and (gender == "M"):
+#     print("Eligible for placement")
+# else:
+#     print("Eligible for data entry job")
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------
@@ -217,3 +217,18 @@ else:
 #     print("Invalid credentials")
 
 # -------------------------------------------------------------------------------------------------------------------------------------
+
+# WAP to accept value of A,B,C and find max value among them using nested if else
+A = int(input("Enter value of A: "))
+B = int(input("Enter value of B: "))
+C = int(input("Enter value of C: "))
+if A>B:
+    if A>C:
+        print("A is greater")
+    else:
+        print("C is greater")
+else:
+    if B>C:
+        print("B is greater")
+    else:
+        print("C is greater")
