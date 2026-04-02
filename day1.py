@@ -245,13 +245,26 @@ This is because of the way Python handles memory management and optimizes memory
 # -------------------------------------------------------------------------------------------------------------------------------------
 
 # WAP to check type of input from user and check whether it is uppercase, lowercase, digit or special character using ord function
-a = input("Enter a single character: ")
-a = ord(a)
-if a >= 65 and a <= 90:
-    print("Uppercase")
-elif a >= 97 and a <= 122:
-    print("Lowercase")
-elif a >= 48 and a <= 57:
-    print("Digit")
-else:
-    print("Special character")
+# a = input("Enter a single character: ")
+# a = ord(a)
+# if a >= 65 and a <= 90:
+#     print("Uppercase")
+# elif a >= 97 and a <= 122:
+#     print("Lowercase")
+# elif a >= 48 and a <= 57:
+#     print("Digit")
+# else:
+#     print("Special character")
+
+# -------------------------------------------------------------------------------------------------------------------------------------
+
+# WAP to calculate notes of 500, 100, 50, 20, 10, 5, 2 and 1 from a given amount
+amount = int(input("Enter the amount: "))
+print("500 notes: ", amount//500)
+print("100 notes: ",(amount%500)//100) 
+print("50 notes: ",((amount%500)%100)//50)
+print("20 notes: ",(((amount%500)%100)%50)//20)
+print("10 notes: ",((((amount%500)%100)%50)%20)//10)
+print("5 notes: ", (((((amount%500)%100)%50)%20)%10)//5)
+print("2 notes: ", ((((((amount%500)%100)%50)%20)%10)%5)//2)
+print("1 notes: ", (((((((amount%500)%100)%50)%20)%10)%5)%2)//1)
