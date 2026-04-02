@@ -235,12 +235,10 @@ This is because of the way Python handles memory management and optimizes memory
 
 # -------------------------------------------------------------------------------------------------------------------------------------
 
-# WAP to accept a day and check whether it is a weekday or weekend
+# WAP to accept a day and check whether it is a working day or weekend
 day = input("Enter a day:")
 day = day.lower()
 if day == "saturday" or day == "sunday":
     print("Weekend")
-elif day == "monday" or day == "tuesday" or day == "wednesday" or day == "thursday" or day == "friday":
-    print("Weekday")
 else:
-    print("Invalid day")
+    print("Working day")
