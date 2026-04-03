@@ -316,7 +316,77 @@
 
 # for i,j in zip(range(1,6), range(5,0,-1)):
 #     if i == 3 and j == 3:
-#         continue
+#         continue 
 #     print(i," ",j)
 
+# -----------------------------------------------------------------------------------------------------------------------------------------------
 
+# WAP to move * to start of string
+# name = "prashant*is*a*good*programmer"
+# stars = 0
+# result = ""
+
+# for i in name:
+#     if i == '*':
+#         stars += 1
+#     else:
+#         result += i
+
+# result = '*' * stars + result
+
+# print(result)
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------
+
+# BODMAS rule in python
+# a=50
+# b=30
+# c=20
+# d=10
+# print((a+b)*c/d) #160.0
+# print((a-b)*(c/d)) #40.0
+# print(a+(b*c)/d) #110.0
+
+# -------------------------------------------------------------------------------------------------------------------------------
+
+# x = ['A','B','C']
+# y = ['A','B','C']
+# z = [1,2,3,4]
+# print(id(x))
+# print(id(y))
+# print(id(z))
+# print(x==y) #True
+# print(x==z)
+# print(x != z) #True
+
+# -------------------------------------------------------------------------------------------------------------------------------
+
+#WAP to check Anagram or not
+# str1 = "listen"
+# str2 = "silent"
+# str1 = sorted(str1)
+# str2 = sorted(str2)
+# if str1 == str2:
+#     print("Anagram")
+# else:
+#     print("Not Anagram")
+
+# -----------------------------------------------------------------------------------------------------------------------
+
+#WAP to count words in string
+# str1="This is a sentence"
+# space=1
+# for i in str1:
+#     if i == " ":
+#         space += 1
+# print("Total words: " ,space) 
+
+a=[1,2,3,4]
+for i in range(0,4):
+    sum = 1
+    for j in range(0,4):
+        if i == j:
+            continue
+        sum = sum*a[j]
+    a[i]=sum
+print(a)
