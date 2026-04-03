@@ -201,3 +201,28 @@
 # a=[1,2,3,4,5,6,7,8,9]
 # a[::2]=10,20,30,40,50 
 # print(a)
+
+# -------------------------------------------------------------------------------------------------------------------------------
+
+# Tuple operations
+
+# mytuple = ("Prashant", 25, 5.9, "Mumbai", True, [1, 2, 3], (4, 5, 6), {"name": "Prashant", "age": 25})
+# print(mytuple)
+# print(type(mytuple))
+
+# mytuple[2] = 6.0 #error tuple is immutable
+# print(mytuple)
+
+# init_tuple = ()
+# print(init_tuple.__len__()) #0
+# print(type(init_tuple)) #<class 'tuple'>
+
+# init_tuple_a = 'a', 'b'
+# init_tuple_b = ('a', 'b')
+# print(id(init_tuple_a))
+# print(id(init_tuple_b))
+# print(init_tuple_a == init_tuple_b) 
+
+init_tuple_a = '1', '2'
+init_tuple_b = ('3', '4')
+print(init_tuple_a + init_tuple_b) #('1', '2', '3', '4')
