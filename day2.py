@@ -177,10 +177,27 @@
 # We should know that list should contain same type of data to sort it(homogeneous data) 
 # otherwise it will give error(heterogeneous data)
 
-mylist = [5, 2, 9, 1, 5, 6]
-newlist = mylist
-print(id(mylist))
-print(id(newlist))
-mylist[0] = 'prashant'
-print(mylist)
-print(newlist)
+# mylist = [5, 2, 9, 1, 5, 6]
+# newlist = mylist
+# print(id(mylist))
+# print(id(newlist))
+# mylist[0] = 'prashant'
+# print(mylist)
+# print(newlist)
+
+# arr = [[1,2,3,4],
+#        [4,5,6,7],
+#        [8,9,10,11,],
+#        [12,13,14,15]]
+# for i in range(0,4):
+#     print(arr[i].pop()) #4,7,11,15
+
+# arr = [1,2,3,4,5,6]
+# for i in range(1,6):
+#     arr[i-1]=arr[i]
+# for i in range(0,6):
+#     print(arr[i], end=" ") #2,3,4,5,6,6
+
+# a=[1,2,3,4,5,6,7,8,9]
+# a[::2]=10,20,30,40,50 
+# print(a)ggvgv
