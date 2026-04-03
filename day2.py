@@ -85,9 +85,55 @@
 #         newname = newname + i
 # print(newname)
 
-name="Mumbai"
-# WAP to reverse the string using for loop
-for i in name[::-1]:
-    print(i)
+# name="Mumbai"
+# rev=""
+# # WAP to reverse the string using for loop
+# for i in name[::-1]:
+#     rev+=i
+# print(rev)
+
+# ------------------------------------------------------------------------------------------------------------------------------
+
+# WAP to check for palindrome string using for loop
+# name = "Racecar"
+# name = name.lower()
+# rev = ""
+# for i in name[::-1]:
+#     rev += i
+# if name == rev:
+#     print("Palindrome")
+# else:
+#     print("Not a Palindrome")
+
+# -------------------------------------------------------------------------------------------------------------------------------
+
+# List
+mylist = ["Prashant", 25, 5.9, "Mumbai", True, [1, 2, 3], (4, 5, 6), {"name": "Prashant", "age": 25}]
+print(mylist)
+# print(type(mylist))
+# print(mylist[0])
+# print(mylist[1])
+# print(mylist[-1])
+# print(mylist[2:5])
+# print(mylist[:5])
+# print(mylist[1:])
+# print(mylist[:])
+# print(mylist[1:8:2])
+# print(mylist[::-1])
+
+# mylist[3]= "Delhi"
+# print(mylist)
+
+# if "Mumbai" in mylist:
+#     print("Found")
+# else:    
+#     print("Not Found")
+
+# mylist.append("India")
+# mylist.append("Python")
+# print(mylist)
+
+# mylist.insert(2, 100)
+# print(mylist)
 
 
