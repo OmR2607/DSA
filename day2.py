@@ -107,9 +107,10 @@
 
 # -------------------------------------------------------------------------------------------------------------------------------
 
-# List
-mylist = ["Prashant", 25, 5.9, "Mumbai", True, [1, 2, 3], (4, 5, 6), {"name": "Prashant", "age": 25}]
-print(mylist)
+# List operations 
+
+# mylist = ["Prashant", 25, 5.9, "Mumbai", True, [1, 2, 3], (4, 5, 6), {"name": "Prashant", "age": 25}]
+# print(mylist)
 # print(type(mylist))
 # print(mylist[0])
 # print(mylist[1])
@@ -136,4 +137,50 @@ print(mylist)
 # mylist.insert(2, 100)
 # print(mylist)
 
+# mylist.remove("Mumbai")
+# print(mylist)
 
+# newlist = [["Prashant", "Delhi", 3.00], [ 'Mumbai', 6], [67.34, 89483, 'yyyy']]
+# print(newlist)
+# print(newlist[0])
+# print(newlist[0][1])
+# print(newlist[1][1])
+# print(newlist[2][2])
+
+# list1 = ["Om","Retharekar"]
+# # print(list1*2)
+# list2 = ["Prashant", "Jha"]
+# print(list1 + list2)
+
+# del list1 
+# print(list1) #error
+# del list2[0]
+# print(list2) 
+
+# list2.clear()
+# print(list2)
+
+# name= "Prashant"
+# print(name)
+# myname = list(name)
+# print(myname)
+# print(type(myname))
+
+# mylist = [1, 2, 3, 4, 5]
+# mylist.reverse()
+# print(mylist)
+
+# Sorting a list
+# mylist = [5, 2, 9, 1, 5, 6]
+# mylist.sort()
+# print(mylist)
+# We should know that list should contain same type of data to sort it(homogeneous data) 
+# otherwise it will give error(heterogeneous data)
+
+mylist = [5, 2, 9, 1, 5, 6]
+newlist = mylist
+print(id(mylist))
+print(id(newlist))
+mylist[0] = 'prashant'
+print(mylist)
+print(newlist)
