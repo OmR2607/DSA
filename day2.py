@@ -223,6 +223,100 @@
 # print(id(init_tuple_b))
 # print(init_tuple_a == init_tuple_b) 
 
-init_tuple_a = '1', '2'
-init_tuple_b = ('3', '4')
-print(init_tuple_a + init_tuple_b) #('1', '2', '3', '4')
+# init_tuple_a = '1', '2'
+# init_tuple_b = ('3', '4')
+# print(init_tuple_a + init_tuple_b) #('1', '2', '3', '4')
+
+# init_tuple = (1,) * 3
+# init tuple[0] = 2
+# print(type(init_tuple)) #<type 'tuple'>
+# print(init_tuple)
+
+# init_tuple = ((1,2),)*7
+# print(len(init_tuple[3:8])) #7
+
+# names = [4,2,5,6,8,2]
+# for i in names:
+#     print(i)
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------
+
+# move 0s to end of list
+# a = [4,0,2,5,0,1]
+# for i in a:
+#     if i == 0:
+#         a.remove(i)
+#         a.append(0)
+# print(a)
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------
+# remove duplicates from a list
+# a = [1,2,2,3,4,4,5]
+# a1 = []
+# for i in a:
+#     if i not in a1:
+#         a1.append(i)
+# print(a1)
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+
+# check common elements in 3 lists
+# a = [1,2,3]
+# b = [2,3,4]
+# c = [3,4,5]
+# d =[]
+# for i in a:
+#     if i in b and i in c:
+#         d.append(i)
+# print(d)
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+
+# WAP to find sum of differences of adjacent elements in an array
+# a = []
+# n = int(input("Enter size of array: "))
+# for i in range(n):
+#     val = int(input("Enter element: "))
+#     a.append(val)
+# print("Array is: ",a)
+# sum = 0
+# for i in range(len(a)-1):
+#     b=abs(a[i]-a[i+1])
+#     sum += b
+# print("Sum of differences is: ",sum)
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+
+# Break statement in for loop
+# for i in range(1,5):
+    # if i == 3:
+        # break
+    # print(i)
+
+# Continue statement in for loop
+# for i in range(1,5):
+    # if i == 3:
+        # continue
+    # print(i)
+
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+
+# WAP to print 
+# 1 5 
+# 2 4
+# 4 2
+# 5 1
+
+# for i in range(1,6):
+#     if i == 3:
+#         continue
+#     print(i," ", 6-i)
+
+# OR
+
+# for i,j in zip(range(1,6), range(5,0,-1)):
+#     if i == 3 and j == 3:
+#         continue
+#     print(i," ",j)
+
+
