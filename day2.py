@@ -54,6 +54,12 @@
 # for i in range(1, 11, 2): #1,3,5,7,9
 #     print(i)
 
+# for i in range(10, 0, -1): #10,9,8,7,6,5,4,3,2,1
+#     print(i)
+
+# for i in range(10,0,-2): #10,8,6,4,2
+#     print(i)
+
 # for i in range(1, 11):
     # print(i*2)
 
@@ -68,17 +74,20 @@
 #         print(i*11," ", i*12, " ", i*13, " ", i*14, "  ", i*15, "  ", i*16, " ", i*17, " ", i*18, " ", i*19, " ", i*20)
 
 # String looping
-name = "prashantjha"
+# name = "prashantjha"
 # for i in name:
 #     print(i)
 
 # WAP to remove duplicates 
-newname = ""
-for i in name:
-    if i not in newname:
-        newname = newname + i
-print(newname)
+# newname = ""
+# for i in name:
+#     if i not in newname:
+#         newname = newname + i
+# print(newname)
 
-
+name="Mumbai"
+# WAP to reverse the string using for loop
+for i in name[::-1]:
+    print(i)
 
 
