@@ -91,3 +91,33 @@
 # for k in arr:
 #     sum += arr[k]
 # print(sum)
+
+# my_dict = {}
+# my_dict[1] = 1
+# my_dict['1'] = 2
+# my_dict[1.0] = 4
+# print(my_dict)
+# sum = 0
+# for k in my_dict:
+#     sum += my_dict[k]
+# print(sum)
+
+# my_dict = {}
+# my_dict[(1,2,4)] = 8
+# my_dict[(4,2,1)] = 10
+# my_dict[(1,2)] = 12
+# sum = 0
+# for k in my_dict:
+#     sum += my_dict[k]
+# print(sum)
+# print(my_dict) 
+
+box = {}
+jars = {}
+crates = {}
+box['biscuit'] = 1
+box['cake'] = 3
+jars['jam'] = 4
+crates['box'] = box
+crates['jars'] = jars
+print(len(crates[box])) 
