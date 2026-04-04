@@ -41,15 +41,15 @@
 
 # dictionary
 
-mydict = {
-    101:"prashant",
-    102:"ashish",
-    "103":"mohini",
-    "104":"trivani",
-    101:"ashish",
-    104:"ashish"
-}
-print(mydict)
+# mydict = {
+#     101:"prashant",
+#     102:"ashish",
+#     "103":"mohini",
+#     "104":"trivani",
+#     101:"ashish",
+#     104:"ashish"
+# }
+# print(mydict)
 
 # with the help of key we have to print values
 # a=mydict[104]
@@ -60,8 +60,8 @@ print(mydict)
 # print(mydict)
 
 # pop() method to remove pair by specific key name
-mydict.pop(102)
-print(mydict)
+# mydict.pop(102)
+# print(mydict)
 
 
 # print only keys
@@ -148,6 +148,7 @@ print(mydict)
 # To find the key with the minimum value in a dictionary
 # I/P:{"X":20,"Y":10,"Z":30} 
 # O/P:Y
+
 # my_dict = {"X":20,"Y":10,"Z":30}
 # min = min(my_dict.values())
 # for x,y in my_dict.items():
@@ -155,4 +156,41 @@ print(mydict)
 #         print(x)
         # break
 
+# ----------------------------------------------------------------------------------------------------------------------------------------
 
+# Pattern Print
+
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print(i, end=" ")
+#     print()
+
+# n= int(input("Enter n: "))
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print(chr(64+i), end=" ")
+#     print()
+
+# n = int(input("Enter n: "))
+# for i in range(1,n+1):
+#     for j in range(1,n+2-i):
+#         print("*",end=" ")
+#     print()
+
+# import time
+# n = int(input("Enter n: "))
+# for i in range(1,n+1):
+#     for j in range(1,n+2-i):
+#         time.sleep(1)
+#         print(chr(64+i),end=" ")
+#     print()
+
+
+import time
+n= int(input("Enter n: "))
+for i in range(1,n+1):
+    print(" "*(n-i),end=" ")
+    for j in range(1,i+1):
+        time.sleep(1)
+        print("*",end=" ")
+    print()
