@@ -82,3 +82,12 @@
 
 # a={'a':1,'b':2,'c':3}
 # print(a['a','b']) #error
+
+# arr = {}
+# arr[1]=1
+# arr['1']=2
+# arr[1] +=1
+# sum = 0
+# for k in arr:
+#     sum += arr[k]
+# print(sum)
