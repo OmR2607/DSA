@@ -1,3 +1,11 @@
+'''
+Q.How many types of argument we can pass in function
+-> 1.Positional Argument
+   2.Default Argument
+   3.Keyword Argument
+   4.Variable number of argument/Variable Length Argument
+'''
+
 # Rearrange Positive and Negative Numbers and rearrange them in alternating fashion
 
 # a=[-1,-2,-3,4,5,-6]
@@ -186,11 +194,118 @@
 #     print()
 
 
-import time
-n= int(input("Enter n: "))
-for i in range(1,n+1):
-    print(" "*(n-i),end=" ")
-    for j in range(1,i+1):
-        time.sleep(1)
-        print("*",end=" ")
-    print()
+# import time
+# n= int(input("Enter n: "))
+# for i in range(1,n+1):
+#     print(" "*(n-i),end=" ")
+#     for j in range(1,i+1):
+#         time.sleep(1)
+#         print("*",end=" ")
+#     print()
+
+# -----------------------------------------------------------------------------------------------------------------------------------------
+
+# Functions 
+
+# def msg(): #called function
+#     print("Hello World!")
+
+# msg() #calling function
+# msg()
+
+#WAP to return multiple value
+# def arithmatic():
+#     a = int(input("Enter a: "))
+#     b = int(input("Enter b: "))
+#     add = a + b
+#     sub = a - b
+#     mul = a * b
+#     div = a / b
+#     return add, sub, mul, div
+
+# # print(arithmatic()) 
+# result = arithmatic()
+# print("Arithematic operations:",result)
+# print(type(result))
+
+# ----------positional argument---------------
+# def login(username,password):
+#     if username == password:
+#         print("Login successful")
+#     else:
+#         print("Invalid credentials")
+
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+# login(username, password)
+
+# ----------keyword argument---------------
+# def login(username,password):
+#     if username == password:
+#         print("Login successful")
+#     else:
+#         print("Invalid credentials")
+
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+# login(username="admin", password="admin")
+
+#  -----------------default argument------------------
+# def CityName(city="Goa"):
+#     print(city)
+
+# CityName("Mumbai")
+# CityName("Delhi")
+# CityName()
+
+#----------------Variable length argument-------------
+# def NameOfCities(*city):
+#     print("City names:",city)
+# NameOfCities("Goa","Nagpur","Mumbai","Delhi")\
+
+#-------------------------------------------------------------------------------------------------------------------------------------------
+#WAP for menu driven code
+import sys
+def add():
+    val1 = int(input("Enter value 1: "))
+    val2 = int(input("Enter value 2: "))
+    print("Addition: ",val1+val2)
+
+def sub():
+    val1 = int(input("Enter value 1: "))
+    val2 = int(input("Enter value 2: "))
+    print("Subtraction: ",val1-val2)
+
+def mul():
+    val1 = int(input("Enter value 1: "))
+    val2 = int(input("Enter value 2: "))
+    print("Multiplication: ",val1*val2)
+
+def div():
+    val1 = int(input("Enter value 1: "))
+    val2 = int(input("Enter value 2: "))
+    print("Division: ",val1/val2)  
+
+
+while True:
+    print("Menu")
+    print("1.Add")
+    print("2.Subtract")
+    print("3.Multiply") 
+    print("4.Divide") 
+    print("5.Exit")
+    choice = int(input("Enter your choice: "))
+    if choice == 1:
+        add()
+    elif choice == 2:
+        sub()
+    elif choice == 3:
+        mul()
+    elif choice == 4:
+        div()
+    elif choice == 5:
+        print("Exiting...")
+        sys.exit()
+    else:
+        print("Invalid choice")
+
