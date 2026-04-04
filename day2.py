@@ -381,12 +381,14 @@
 #         space += 1
 # print("Total words: " ,space) 
 
-a=[1,2,3,4]
-for i in range(0,4):
-    sum = 1
-    for j in range(0,4):
-        if i == j:
-            continue
-        sum = sum*a[j]
-    a[i]=sum
-print(a)
+# -----------------------------------------------------------------------------------------------------------------------
+
+# print array with multiplication of other element leaving that particular value
+
+# a=[1,2,3,4]
+# for i in range(0,4):
+#    for j in range(0,4):
+#       if i == j:
+#          continue
+      
+# print(a)
