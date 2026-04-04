@@ -264,47 +264,63 @@ Q.How many types of argument we can pass in function
 # NameOfCities("Goa","Nagpur","Mumbai","Delhi")\
 
 #-------------------------------------------------------------------------------------------------------------------------------------------
-#WAP for menu driven code
-import sys
-def add():
-    val1 = int(input("Enter value 1: "))
-    val2 = int(input("Enter value 2: "))
-    print("Addition: ",val1+val2)
+# #WAP for menu driven code
+# import sys
+# def add():
+#     val1 = int(input("Enter value 1: "))
+#     val2 = int(input("Enter value 2: "))
+#     print("Addition: ",val1+val2)
 
-def sub():
-    val1 = int(input("Enter value 1: "))
-    val2 = int(input("Enter value 2: "))
-    print("Subtraction: ",val1-val2)
+# def sub():
+#     val1 = int(input("Enter value 1: "))
+#     val2 = int(input("Enter value 2: "))
+#     print("Subtraction: ",val1-val2)
 
-def mul():
-    val1 = int(input("Enter value 1: "))
-    val2 = int(input("Enter value 2: "))
-    print("Multiplication: ",val1*val2)
+# def mul():
+#     val1 = int(input("Enter value 1: "))
+#     val2 = int(input("Enter value 2: "))
+#     print("Multiplication: ",val1*val2)
 
-def div():
-    val1 = int(input("Enter value 1: "))
-    val2 = int(input("Enter value 2: "))
-    print("Division: ",val1/val2)  
+# def div():
+#     val1 = int(input("Enter value 1: "))
+#     val2 = int(input("Enter value 2: "))
+#     print("Division: ",val1/val2)  
 
-while True:
-    print("Menu")
-    print("1.Add")
-    print("2.Subtract")
-    print("3.Multiply") 
-    print("4.Divide") 
-    print("5.Exit")
-    choice = int(input("Enter your choice: "))
-    if choice == 1:
-        add()
-    elif choice == 2:
-        sub()
-    elif choice == 3:
-        mul()
-    elif choice == 4:
-        div()
-    elif choice == 5:
-        print("Exiting...")
-        sys.exit()
-    else:
-        print("Invalid choice")
+# while True:
+#     print("Menu")
+#     print("1.Add")
+#     print("2.Subtract")
+#     print("3.Multiply") 
+#     print("4.Divide") 
+#     print("5.Exit")
+#     choice = int(input("Enter your choice: "))
+#     if choice == 1:
+#         add()
+#     elif choice == 2:
+#         sub()
+#     elif choice == 3:
+#         mul()
+#     elif choice == 4:
+#         div()
+#     elif choice == 5:
+#         print("Exiting...")
+#         sys.exit()
+#     else:
+#         print("Invalid choice")
 
+# ----------------------------------------------------------------------------------------------------------------------------------------
+
+# 1.rstrip() ---> To remove spaces at right hand side
+# 2.lstrip() ---> To remove spaces at left hand side
+# 3.strip() ---> To remove spaces at both sides
+
+programming = input("Enter your programming Name:")
+p_name = programming.strip()
+if p_name == 'Python':
+    print(p_name)
+elif p_name == 'Java':
+    print(p_name)
+elif p_name == 'Cpp':
+    print(p_name)
+else:
+    print("Wrong programming name")
