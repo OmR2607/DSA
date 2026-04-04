@@ -41,15 +41,15 @@
 
 # dictionary
 
-# mydict = {
-#     101:"prashant",
-#     102:"ashish",
-#     "103":"mohini",
-#     "104":"trivani",
-#     101:"ashish",
-#     104:"ashish"
-# }
-# print(mydict)
+mydict = {
+    101:"prashant",
+    102:"ashish",
+    "103":"mohini",
+    "104":"trivani",
+    101:"ashish",
+    104:"ashish"
+}
+print(mydict)
 
 # with the help of key we have to print values
 # a=mydict[104]
@@ -58,6 +58,11 @@
 # we will old value by new value
 # mydict[102]="peter"
 # print(mydict)
+
+# pop() method to remove pair by specific key name
+mydict.pop(102)
+print(mydict)
+
 
 # print only keys
 # for x in mydict:
@@ -112,12 +117,42 @@
 # print(sum)
 # print(my_dict) 
 
-box = {}
-jars = {}
-crates = {}
-box['biscuit'] = 1
-box['cake'] = 3
-jars['jam'] = 4
-crates['box'] = box
-crates['jars'] = jars
-print(len(crates[box])) 
+# box = {}
+# jars = {}
+# crates = {}
+# box['biscuit'] = 1
+# box['cake'] = 3
+# jars['jam'] = 4
+# crates['box'] = box
+# crates['jars'] = jars
+# print(len(crates[box])) 
+
+# dict = {'c' : 97, 'a':
+# 96, 'b':98}
+# for _ in sorted(dict):
+    # print(dict[_])
+
+# rec = {"Name": "Python", "Age": "20"}
+# r = rec.copy()
+# print(id(rec) == id(r))
+
+# rec={"Name":"Python","Age":"20","Addr":"NJ","Country":"USA"}
+# id1=id(rec)
+# del rec
+# rec={"Name":"Python","Age":"20","Addr":"NJ"}
+# id2=id(rec)
+# print(id1==id2)
+
+# --------------------------------------------------------------------------------------------------------------------------------------
+
+# To find the key with the minimum value in a dictionary
+# I/P:{"X":20,"Y":10,"Z":30} 
+# O/P:Y
+# my_dict = {"X":20,"Y":10,"Z":30}
+# min = min(my_dict.values())
+# for x,y in my_dict.items():
+#     if y == min:
+#         print(x)
+        # break
+
+
