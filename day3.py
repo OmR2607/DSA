@@ -286,7 +286,6 @@ def div():
     val2 = int(input("Enter value 2: "))
     print("Division: ",val1/val2)  
 
-
 while True:
     print("Menu")
     print("1.Add")
