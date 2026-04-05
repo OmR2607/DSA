@@ -329,11 +329,11 @@ Q.How many types of argument we can pass in function
 
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
+# import math
+# import os
+# import random
+# import re
+# import sys
 
 #
 # Complete the 'timeConversion' function below.
@@ -342,29 +342,29 @@ import sys
 # The function accepts STRING s as parameter.
 #
 
-def timeConversion(s):
-    # Write your code here
-    a = list(s)
-    if a[8] == 'P':
-        if a[0] == '1' and a[1] == '2':
-            a[0] = '1'
-            a[1] = '3'
-        else:
-            a[0] = str(int(a[0]) + 1)
-            a[1] = str(int(a[1]) + 2)
-    if a[8] == 'A':
-        if a[0] == '1' and a[1] == '2':
-            a[0] = '0'
-            a[1]
+# def timeConversion(s):
+#     # Write your code here
+#     a = list(s)
+#     if a[8] == 'P':
+#         if a[0] == '1' and a[1] == '2':
+#             a[0] = '1'
+#             a[1] = '3'
+#         else:
+#             a[0] = str(int(a[0]) + 1)
+#             a[1] = str(int(a[1]) + 2)
+#     if a[8] == 'A':
+#         if a[0] == '1' and a[1] == '2':
+#             a[0] = '0'
+#             a[1]
 
     
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+# if __name__ == '__main__':
+#     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    s = input()
+#     s = input()
 
-    result = timeConversion(s)
+#     result = timeConversion(s)
 
-    fptr.write(result + '\n')
+#     fptr.write(result + '\n')
 
-    fptr.close()
+#     fptr.close()
