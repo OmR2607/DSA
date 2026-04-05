@@ -314,13 +314,57 @@ Q.How many types of argument we can pass in function
 # 2.lstrip() ---> To remove spaces at left hand side
 # 3.strip() ---> To remove spaces at both sides
 
-programming = input("Enter your programming Name:")
-p_name = programming.strip()
-if p_name == 'Python':
-    print(p_name)
-elif p_name == 'Java':
-    print(p_name)
-elif p_name == 'Cpp':
-    print(p_name)
-else:
-    print("Wrong programming name")
+# programming = input("Enter your programming Name:")
+# p_name = programming.rstrip()
+# if p_name == 'Python':
+#     print(p_name)
+# elif p_name == 'Java':
+#     print(p_name)
+# elif p_name == 'Cpp':
+#     print(p_name)
+# else:
+#     print("Wrong programming name")
+
+# -----------------------------------------------------------------------------------------------------------------------------------------
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'timeConversion' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts STRING s as parameter.
+#
+
+def timeConversion(s):
+    # Write your code here
+    a = list(s)
+    if a[8] == 'P':
+        if a[0] == '1' and a[1] == '2':
+            a[0] = '1'
+            a[1] = '3'
+        else:
+            a[0] = str(int(a[0]) + 1)
+            a[1] = str(int(a[1]) + 2)
+    if a[8] == 'A':
+        if a[0] == '1' and a[1] == '2':
+            a[0] = '0'
+            a[1]
+
+    
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = timeConversion(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
