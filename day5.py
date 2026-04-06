@@ -228,4 +228,184 @@
 # stud.display()
 
 # -------------------------------------------------------------------------------------------------------------------------------------
+# Static Method
 
+# class Student:
+#     @staticmethod
+#     def get_personal_detail(first_name,last_name):
+#         print("\nYour Full Name is: ",first_name," ",last_name)
+
+#     @staticmethod
+#     def contact_detail(mob_no,roll_no):
+#         print("Your Mobile Number is: ",mob_no)
+#         print("Your Roll Number is: ",roll_no,"\n")
+
+# Student.get_personal_detail("Om","Retharekar")
+# Student.contact_detail(2828282828,101)
+
+# ---------------------------------------------------------------------------------------------------------------------------------
+
+# Inheritance
+'''
+Extending property from one class to another class is called inheritance
+Directly we are getting here reusability concept
+1.Base Class: A class which inherits its property to another is called base class or parent class.
+2.Derived Class: A class in which properties are inherited called as derived class or child class.
+
+Types of Inheritance:
+1.Single Inheritance
+2.Multiple Inheritance
+3.Multilevel Inheritance
+4.Hierarchical Inheritance
+5.Hybrid Inheritance
+'''
+
+# ---------------------------------------------------------------------------------------------------------------------------------
+
+# # 1.Single level Inheritance
+# class College: #Parent Class
+#     def college_name(self): 
+#         print("Modern College")
+
+# class Student(College): #Child Class
+#     def student_name(self): #Member Function
+#         print("Student Name: Om Retharekar")
+#         print("Branch: Computer Science")
+
+# obj = Student()
+# obj.college_name()
+# obj.student_name() 
+
+# # ---------------------------------------------------------------------------------------------------------------------------------
+
+# # 2.Multilevel Inheritance
+# class College: #Parent Class
+#     def college_name(self): 
+#         print("\tModern College")
+
+# class Student(College): #Child Class
+#     def student_name(self): #Member Function
+#         print("Student Name: Om Retharekar")
+#         print("Branch: Computer Science")
+
+# class Exam(Student): #Child Class
+#     def subjects(self):
+#         print("Subject1: Maths")
+#         print("Subject2: Physics")
+#         print("Subject3: Chemistry")
+
+# obj = Exam()
+# obj.college_name()
+# obj.student_name()
+# obj.subjects() 
+
+# ---------------------------------------------------------------------------------------------------------------------------------
+
+# # 3.Multiple Inheritance
+# class SubMarks:
+#     math=int(input("Enter Paper Marks of Maths: "))
+#     phy=int(input("Enter Paper Marks of Physics: "))
+#     chem=int(input("Enter Paper Marks of Chemistry: "))
+#     total=math+phy+chem
+#     print("Total Marks: ",total)
+# # -------------------------------------Parent Class-1-------------------------------------------------
+# class PracMarks:
+#     cpract = int(input("Enter Practical marks of C language: "))
+
+# # -------------------------------------Parent Class-2-------------------------------------------------
+# class Result(SubMarks, PracMarks): #Child Class
+#     # If student pass in both subject and practical paper then pass
+#     def total(self):
+#         if self.math >= 40 and self.phy >= 40 and self.chem >= 40 and self.cpract >= 20:
+#             print("Pass")
+#         else:
+#             print("Fail")
+
+# obj = Result()
+# obj.total()
+
+# -------------------------------------------------------------------------------------------------------------------------------------
+
+#Polymorphism
+'''
+Polymorphism means many forms
+1.Method Overloading (Python does not support)
+2.Method Overriding  (Python supports)
+'''
+# class Principal:
+#     def role(self):
+#         print("I am Principal")
+
+# class Dean:
+#     def role(self):
+#         print("I am Dean")
+
+# class Hod:
+#     def role(self):
+#         print("I am Hod")
+
+# class Faculty:
+#     def role(self):
+#         print("I am Faculty")
+# # --------------------------------Class declaration Completed-----------------------------------------------------
+
+# def func(obj):
+#     obj.role()                                  #calling function
+# campus=[Principal(),Dean(),Hod(),Faculty()]
+# for obj in campus:                              #obj=[0:Pricipal(),1:Dean(),2:Hod(),3:Faculty()]
+#     func(obj)                                   #obj function
+
+# ---------------------------------------------
+
+## Different number of Parameters
+# class Arithmetic:
+#     def add(self,a):
+#         print(a)
+#     def add(self,a,b):
+#         print(a+b)
+#     def add(self,a,b,c):
+#         print(a+b+c)
+# obj=Arithmetic()
+# obj.add(10)
+# obj.add(10,20)
+# obj.add(10,20,30)
+
+#----------------------------OR--------------------------------------
+
+# class Arithmetic:
+#     def add(self,a=None,b=None,c=None):
+#         if a!=None and b!=None and c!=None:
+#             print(a+b+c)
+#         elif a!=None and b!=None:
+#             print(a+b)
+#         elif a!=None:
+#             print(a)
+#         else:
+#             print("No arguments")
+# obj=Arithmetic()
+# obj.add(10)
+# obj.add(10,20)
+# obj.add(10,20,30)
+# obj.add()
+
+# ------------------------------------------------------------------------------------------------------------------------------------- 
+
+#Method overriding(parent and child relationship must be there)
+class Rbi:
+    def homeloan_rate(self):
+        print("Home Loan Rate: 8%")
+
+class Sbi(Rbi):
+    def homeloan_rate(self):        #overriding
+        print("Home Loan Rate: 7%") 
+
+class Hdfc(Sbi):
+    def homeloan_rate(self):        #overriding
+        print("Home Loan Rate: 6%")
+
+obj = Rbi()
+obj.homeloan_rate()
+obj = Sbi()
+obj.homeloan_rate()
+obj = Hdfc()
+obj.homeloan_rate()
