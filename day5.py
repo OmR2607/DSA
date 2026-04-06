@@ -391,21 +391,35 @@ Polymorphism means many forms
 # ------------------------------------------------------------------------------------------------------------------------------------- 
 
 #Method overriding(parent and child relationship must be there)
-class Rbi:
-    def homeloan_rate(self):
-        print("Home Loan Rate: 8%")
+# class Rbi:
+#     def homeloan_rate(self):
+#         print("Home Loan Rate of RBI: 8%")
 
-class Sbi(Rbi):
-    def homeloan_rate(self):        #overriding
-        print("Home Loan Rate: 7%") 
+# class Sbi(Rbi):
+#     def homeloan_rate(self):        #overriding
+#         print("Home Loan Rate of SBI: 7%") 
 
-class Hdfc(Sbi):
-    def homeloan_rate(self):        #overriding
-        print("Home Loan Rate: 6%")
+# class Hdfc(Rbi):
+#     def homeloan_rate(self):        #overriding
+#         print("Home Loan Rate of HDFC: 6%")
+#         super().homeloan_rate()     #calling parent class method
 
-obj = Rbi()
-obj.homeloan_rate()
-obj = Sbi()
-obj.homeloan_rate()
-obj = Hdfc()
-obj.homeloan_rate()
+# obj = Sbi()
+# obj.homeloan_rate()
+# obj = Hdfc()
+# obj.homeloan_rate()
+
+# ------------------------------------------------------------------------------------------------------------------------------------- 
+
+#Constructor overriding
+
+class Father:
+    def __init__(self):
+        print("Father : I am at the breakfast table.")
+
+class Son(Father):                                      #constructor overriding
+    def __init__(self):
+        print("Son : I will be late for breakfast.")    
+        super().__init__()                              #calling parent class constructor
+
+obj = Son()
