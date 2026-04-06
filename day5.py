@@ -413,13 +413,13 @@ Polymorphism means many forms
 
 #Constructor overriding
 
-class Father:
-    def __init__(self):
-        print("Father : I am at the breakfast table.")
+# class Father:
+#     def __init__(self):
+#         print("Father : I am at the breakfast table.")
 
-class Son(Father):                                      #constructor overriding
-    def __init__(self):
-        print("Son : I will be late for breakfast.")    
-        super().__init__()                              #calling parent class constructor
+# class Son(Father):                                      #constructor overriding
+#     def __init__(self):
+#         print("Son : I will be late for breakfast.")    
+#         super().__init__()                              #calling parent class constructor
 
-obj = Son()
+# obj = Son()
