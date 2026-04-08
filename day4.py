@@ -267,23 +267,23 @@
 # And then calculate "Total","Percentage","Result"
 # -If all subjects have passing marks then result is pass else fail(Passing Marks for each subject is 40)
 
-import csv
-f = open("Calculate.csv","a",newline="")
-a = csv.writer(f)
-a.writerow(["Roll_No","Name","Mobile_No","E-mail","Maths","Physics","Chemistry","Total","Percentage","Result"])
-Roll_no = input("Enter Roll No: ")
-name = input("Enter Name: ")
-Mobile_no = input("Enter Mobile No: ")
-E_mail = input("Enter E-mail: ")
-Maths = int(input("Enter Maths Marks: "))
-Physics = int(input("Enter Physics Marks: "))
-Chemistry = int(input("Enter Chemistry Marks: "))
-Total = Maths + Physics + Chemistry
-Percentage = (Total/3.0)
-if Maths >= 40 and Physics >= 40 and Chemistry >= 40:
-    Result = "Pass"
-else:
-    Result = "Fail"
-a.writerow([Roll_no,name,Mobile_no,E_mail,Maths,Physics,Chemistry,Total,Percentage,Result])
-print("Student Record Added")
-f.close()
+# import csv
+# f = open("Calculate.csv","a",newline="")
+# a = csv.writer(f)
+# a.writerow(["Roll_No","Name","Mobile_No","E-mail","Maths","Physics","Chemistry","Total","Percentage","Result"])
+# Roll_no = input("Enter Roll No: ")
+# name = input("Enter Name: ")
+# Mobile_no = input("Enter Mobile No: ")
+# E_mail = input("Enter E-mail: ")
+# Maths = int(input("Enter Maths Marks: "))
+# Physics = int(input("Enter Physics Marks: "))
+# Chemistry = int(input("Enter Chemistry Marks: "))
+# Total = Maths + Physics + Chemistry
+# Percentage = (Total/3.0)
+# if Maths >= 40 and Physics >= 40 and Chemistry >= 40:
+#     Result = "Pass"
+# else:
+#     Result = "Fail"
+# a.writerow([Roll_no,name,Mobile_no,E_mail,Maths,Physics,Chemistry,Total,Percentage,Result])
+# print("Student Record Added")
+# f.close()

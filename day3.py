@@ -63,7 +63,7 @@ Q.How many types of argument we can pass in function
 # a=mydict[104]
 # print(a)
 
-# we will old value by new value
+# we will replace old value by new value
 # mydict[102]="peter"
 # print(mydict)
 
